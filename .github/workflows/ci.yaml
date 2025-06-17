@@ -26,7 +26,7 @@ jobs:
         with:
           push: true
           file: Dockerfile.base
-          tags: ghcr.io/terrateamio/action-base:latest
+          tags: ghcr.io/anonfriese/terrateam-action-base:latest
 
       -
         name: Build and push action
@@ -34,4 +34,4 @@ jobs:
         with:
           push: true
           file: Dockerfile
-          tags: ghcr.io/terrateamio/action:v1
+          tags: ghcr.io/anonfriese/terrateam-action:v1
