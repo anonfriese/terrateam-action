@@ -32,7 +32,7 @@ export TENV_AUTO_INSTALL=true
 
 # Start the Terrat Runner with SSH agent
 echo "Starting Terrat Runner"
-ssh-agent uv run python3 /terrat_runner/main.py \
+ssh-agent python3 /terrat_runner/main.py \
         --work-token "$WORK_TOKEN" \
         --workspace "$GITHUB_WORKSPACE" \
         --api-base-url "$API_BASE_URL" \
