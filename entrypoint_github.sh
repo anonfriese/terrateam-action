@@ -6,7 +6,7 @@ API_BASE_URL="$2"
 
 # Start the Terrat Runner with SSH agent
 echo "Starting Terrat Runner"
-ssh-agent python3 /terrat_runner/main.py \
+ssh-agent uv run python3 /terrat_runner/main.py \
         --work-token "$WORK_TOKEN" \
         --workspace "$GITHUB_WORKSPACE" \
         --api-base-url "$API_BASE_URL" \
