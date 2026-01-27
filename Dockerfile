@@ -1,4 +1,5 @@
 FROM ghcr.io/terrateamio/action-base:latest
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 COPY entrypoint.sh /entrypoint.sh
 COPY entrypoint_gitlab.sh /entrypoint_gitlab.sh
